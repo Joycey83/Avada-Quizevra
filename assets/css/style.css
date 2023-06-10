@@ -21,7 +21,7 @@ body {
 }
 
 #bg-image {
-  background: linear-gradient(#63141465, #0c0a0dd1),
+  background: linear-gradient(#55454565, #0c0a0d9e),
     url("../images/harry-background-2.png") no-repeat; /*sourced from Wallpapper Cave*/
   background-size: cover;
   background-position: center;
@@ -46,6 +46,7 @@ section {
   justify-content: space-around;
   border-radius: 10px;
   opacity: 0.8;
+  box-shadow: rgba(111, 102, 102, 0.305) 0px 5px 15px;
 }
 
 /*CSS styling for the game question, question box*/
@@ -153,6 +154,7 @@ input[type="radio"]:checked ~ .option {
 /*The styling for when the player hoover over the Next Question button it will turn Red*/
 .next-button-box button:hover {
   background-color: red;
+  color: #000;
 }
 
 /*CSS styling for the warning pop up box when the player does not select any answer to the question*/
