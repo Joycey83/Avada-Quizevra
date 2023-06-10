@@ -481,7 +481,7 @@ Media Queries: home page for small devices
 @media (min-width: 351px) and (max-width: 992px) {
   .click-me {
     display: block;
-    padding: 0.5rem 0.5rem;
+    padding: 0.6rem 0.5rem;
     font-size: 0.8rem;
   }
   .content {
@@ -524,8 +524,8 @@ Media Queries: Small Mobile Devices
 @media (min-width: 300px) and (max-width: 350px) {
   .click-me {
     display: block;
-    padding: 1.1rem 1rem;
-    font-size: 1.1rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.85rem;
   }
 
   .quiz--title {
@@ -585,8 +585,8 @@ Media Queries: 351px up to 480px for small to medium devices
 @media (min-width: 351px) and (max-width: 480px) {
   .click-me {
     display: block;
-    padding: 1.1rem 1rem;
-    font-size: 1.2rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.85rem;
   }
   .quiz--title {
     font-size: 1.5rem;
