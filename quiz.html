@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The ultimate quiz for massive Harry Potter fans around the world"
+    />
+    <meta
+      name="keywords"
+      content="Potterheads,Harry Potter,Quiz,Hogwarts,Grifindor"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>The quiz: Avada Quizevra!</title>
+  </head>
+
+  <body>
+    <section id="bg-image">
+      <h1 id="title">Avada Quizevra!</h1>
+
+      <!--The start of the quiz game box area-->
+
+      <div class="game-quiz-box">
+        <div class="game-info-box">
+          <h1>Score : <span id="player-score">0</span></h1>
+          <h1>Question : <span id="question-number"></span> / 30</h1>
+        </div>
+
+        <div class="game-question-box">
+          <p id="display-question"></p>
+        </div>
+
+        <div class="game-options-box">
+          <!--The code for the warning pop up box, when the player does not click on an answer-->
+
+          <div class="choice-box" id="option-modal">
+            <div class="choice-content-box">
+              <h1>Please choose An answer</h1>
+              <h2>Many Thanks</h2>
+
+              <div class="modal-button-container">
+                <button id="closeModal">Continue</button>
+              </div>
+            </div>
+            <!--The end of the warning pop up code-->
+          </div>
+          <!--4 option answer boxes -->
+          <span>
+            <input
+              type="radio"
+              id="option-one"
+              name="option"
+              class="radio"
+              value="optionA"
+            />
+            <label
+              for="option-one"
+              class="option"
+              id="option-one-label"
+            ></label>
+          </span>
+
+          <span>
+            <input
+              type="radio"
+              id="option-two"
+              name="option"
+              class="radio"
+              value="optionB"
+            />
+            <label
+              for="option-two"
+              class="option"
+              id="option-two-label"
+            ></label>
+          </span>
+
+          <span>
+            <input
+              type="radio"
+              id="option-three"
+              name="option"
+              class="radio"
+              value="optionC"
+            />
+            <label
+              for="option-three"
+              class="option"
+              id="option-three-label"
+            ></label>
+          </span>
+
+          <span>
+            <input
+              type="radio"
+              id="option-four"
+              name="option"
+              class="radio"
+              value="optionD"
+            />
+            <label
+              for="option-four"
+              class="option"
+              id="option-four-label"
+            ></label>
+          </span>
+        </div>
+
+        <div class="next-button-box">
+          <button id="nextQuestion">Next Question</button>
+        </div>
+      </div>
+      <!--  when quiz ends -->
+      <!--The results box starts-->
+      <div class="results-container" id="score-modal">
+        <div class="results-content-container">
+          <h1>Congratulations, Quiz Completed.</h1>
+
+          <div class="rating">
+            <p>Questions : 25</p>
+            <p class="red">Wrong Answers : <span id="wrong-answers"></span></p>
+            <p class="green">
+              Right Answers : <span id="right-answers"></span>
+            </p>
+            <p>Grade : <span id="grade-percentage"></span>%</p>
+            <p><span id="remarks"></span></p>
+          </div>
+          <!--result box ends-->
+
+          <div>
+            <a href="index.html" id="closeScore" class="exit-btn">Exit Game</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
