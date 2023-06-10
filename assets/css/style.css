@@ -296,6 +296,12 @@ p.green {
 /*Media queries for my Quiz on small mobile device */
 
 @media (min-width: 300px) and (max-width: 350px) {
+  .click-me {
+    display: block;
+    padding: 1.1rem 1rem;
+    font-size: 1.1rem;
+  }
+
   .quiz--title {
     font-size: 1.5rem;
   }
@@ -347,6 +353,11 @@ p.green {
 /* Media queries for my quiz game from 351px up to 480px for small to medium devices*/
 
 @media (min-width: 351px) and (max-width: 480px) {
+  .click-me {
+    display: block;
+    padding: 1.1rem 1rem;
+    font-size: 1.2rem;
+  }
   .quiz--title {
     font-size: 1.5rem;
   }
@@ -390,6 +401,12 @@ p.green {
 /* Media queries for my quiz from 481px up to 768px for meduim to large devices like tablets & desktop*/
 
 @media (min-width: 481px) and (max-width: 768px) {
+  .click-me {
+    display: block;
+    padding: 1.1rem 1rem;
+    font-size: 1.25rem;
+  }
+
   .game-quiz-box {
     width: 80%;
     height: 80vh;
@@ -515,13 +532,6 @@ html {
   line-height: 2.5;
 }
 
-/* .line {
-  bottom: 40px;
-  width: 100%;
-  height: 1px;
-  background: #ffffff;
-} */
-
 .continue-btn {
   position: absolute;
   bottom: 10px;
@@ -548,8 +558,13 @@ html {
 /*Media queries for my Quizevera home page for small devices*/
 
 @media (min-width: 300px) and (max-width: 350px) {
+  .click-me {
+    display: block;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8rem;
+  }
   .content {
-    width: 180px;
+    width: 320px;
     height: 340px;
     border: 3px solid #ffffff;
     background-color: #000000f8;
@@ -580,6 +595,11 @@ html {
 
 /*Media queries for my Quizzard home page for small devices, medium and large devices*/
 @media (min-width: 351px) and (max-width: 992px) {
+  .click-me {
+    display: block;
+    padding: 0.7rem 0.5rem;
+    font-size: 0.8rem;
+  }
   .content {
     width: 340px;
     height: 340px;
