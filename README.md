@@ -1,4 +1,4 @@
-# Avada Quizevra
+# Avada Quizevra : Quiz Game Application
 
 # Introduction
 
