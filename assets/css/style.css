@@ -296,12 +296,15 @@ p.green {
 /*Media queries for my Quiz on small mobile device */
 
 @media (min-width: 300px) and (max-width: 350px) {
+  .quiz--title {
+    font-size: 1.5rem;
+  }
   .game-quiz-box {
     width: 90%;
     height: 80vh;
   }
   .game-info-box h1 {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   span label {
@@ -314,19 +317,22 @@ p.green {
     height: 6rem;
   }
   .game-question-box p {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
   .game-options-box span {
-    width: 90%;
-    height: 1.5rem;
+    width: 100%;
+    height: 3rem;
     margin-top: 4px;
   }
   .game-options-box span label {
-    font-size: 0.5rem;
+    font-size: 1.1rem;
   }
   button {
     margin-top: 4px;
+  }
+  .next-button-box button {
+    font-size: 1rem;
   }
   .choice-content-box {
     width: 90%;
@@ -336,23 +342,20 @@ p.green {
   .choice-content-box h1 {
     font-size: 1rem;
   }
-
-  #title {
-    font-size: 2rem;
-    color: rgb(146, 1, 26);
-    text-align: center;
-  }
 }
 
 /* Media queries for my quiz game from 351px up to 480px for small to medium devices*/
 
 @media (min-width: 351px) and (max-width: 480px) {
+  .quiz--title {
+    font-size: 1.5rem;
+  }
   .game-quiz-box {
     width: 80%;
     height: 80vh;
   }
   .game-info-box h1 {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
   .game-question-box {
@@ -360,16 +363,20 @@ p.green {
   }
 
   .game-question-box p {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 
   .game-options-box span label {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 
   .game-options-box span {
     width: 90%;
     margin-top: 3px;
+  }
+
+  .next-button-box button {
+    font-size: 1rem;
   }
   .choice-content-box {
     width: 90%;
@@ -388,7 +395,7 @@ p.green {
     height: 80vh;
   }
   .game-info-box h1 {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .game-question-box {
@@ -397,7 +404,7 @@ p.green {
   }
 
   .game-question-box p {
-    font-size: 0.6rem;
+    font-size: 1.1rem;
   }
 
   .game-options-box span {
@@ -410,9 +417,6 @@ p.green {
   }
   .choice-content-box h1 {
     font-size: 1.1rem;
-  }
-
-  #home-image {
   }
 }
 
@@ -545,16 +549,15 @@ html {
 
 @media (min-width: 300px) and (max-width: 350px) {
   .content {
-    width: 300px;
-    height: 350px;
-    background: whitesmoke;
-    border-radius: 3px;
-    box-shadow: 10px 10px 10px;
-    transition: 0.3s ease-in;
+    width: 180px;
+    height: 340px;
+    border: 3px solid #ffffff;
+    background-color: #000000f8;
+    color: aliceblue;
   }
-  header h1 {
+  .header h1 {
     color: white;
-    font-size: 10px;
+    font-size: 0.9rem;
   }
   /* Mobile background image for mobile & Tablets */
   #home-image {
@@ -563,22 +566,41 @@ html {
     background-size: cover;
     background-position: center;
   }
+
+  .instructions {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 2px;
+  }
+
+  .instructions p {
+    line-height: 1.5;
+  }
 }
 
 /*Media queries for my Quizzard home page for small devices, medium and large devices*/
 @media (min-width: 351px) and (max-width: 992px) {
   .content {
-    width: 320px;
-    height: 350px;
-    background: whitesmoke;
-    border-radius: 3px;
-    box-shadow: 10px 10px 10px;
-    transition: 0.3s ease-in;
+    width: 340px;
+    height: 340px;
+    border: 3px solid #ffffff;
+    background-color: #000000f8;
+    color: aliceblue;
   }
 
-  header h1 {
+  .header h1 {
     color: white;
-    font-size: 10px;
+    font-size: 1rem;
+  }
+
+  .instructions {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.8rem;
+    margin-bottom: 8px;
+  }
+
+  .instructions p {
+    line-height: 2;
   }
   /* Mobile background image for mobile & Tablets */
   #home-image {
