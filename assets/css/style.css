@@ -19,11 +19,6 @@ body {
   font-family: "Tilt Prism", cursive;
 }
 
-/* .title--container {
-  padding: 1.2rem 1rem;
-  background-color: rgba(145, 22, 22, 0.418);
-} */
-
 #bg-image {
   background: linear-gradient(#55454565, #0c0a0d9e),
     url("../images/harry-background-2.png") no-repeat; /*sourced from Wallpapper Cave*/
@@ -63,7 +58,7 @@ section {
 }
 
 .game-info-box h1 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: aliceblue;
   font-weight: 500;
 }
@@ -104,9 +99,9 @@ section {
   /* box-shadow: 10px 10px 10px; */
 }
 .game-options-box span label {
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 
 span label {
