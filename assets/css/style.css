@@ -503,29 +503,32 @@ html {
   line-height: 2.5;
 }
 
-.line {
-  bottom: 60px;
+/* .line {
+  bottom: 40px;
   width: 100%;
   height: 1px;
-  background: black;
-}
+  background: #ffffff;
+} */
 
 .continue-btn {
   position: absolute;
   bottom: 10px;
   right: 22px;
   border: 2px solid red;
-  border-radius: 6px;
+  border-radius: 3px;
   color: black;
-  padding: 2px 3px;
+  padding: 0.5rem 2rem;
   font-size: 14px;
   cursor: pointer;
+  color: aliceblue;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .continue-btn:hover {
-  background: #0047ab;
-  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  background-color: rgba(193, 10, 10, 0.777);
   transition: 0.5s;
 }
 /*CSS styling of my quizevra home page & instructions ends here*/
