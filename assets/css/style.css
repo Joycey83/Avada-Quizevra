@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); /*Google Fonts*/
-
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +5,7 @@
 }
 
 body {
-  font-family: poppins, sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 /*CSS styling for my Quiz heading & Quiz game box*/
@@ -59,8 +57,9 @@ section {
 }
 
 .game-info-box h1 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: aliceblue;
+  font-weight: 500;
 }
 
 .game-question-box {
@@ -74,10 +73,11 @@ section {
 }
 
 .game-question-box p {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   text-align: center;
   padding: 3px;
   color: aliceblue;
+  font-weight: 500;
 }
 /*CSS styling for the 4 options answers & next question button*/
 .game-options-box {
