@@ -213,7 +213,7 @@ h2 {
 .results-content-container {
   height: 20rem;
   width: 20rem;
-  background-color: rgb(42, 42, 42);
+  background-color: rgba(10, 10, 10, 0.692);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -262,7 +262,7 @@ p.green {
   height: 2rem;
   background: none;
   outline: none;
-  border: 1px solid rgb(252, 242, 241);
+  border: 1px solid rgb(246, 242, 242);
   color: #ffffff;
   font-size: 1.1rem;
   cursor: pointer;
@@ -284,13 +284,13 @@ p.green {
   color: #ffffff;
   font-size: 1rem;
   cursor: pointer;
-  padding: 2px 3px 3px;
+  padding: 0.5rem 1rem;
   border-radius: 10px;
   text-decoration: none;
 }
 
 .exit-btn:hover {
-  background-color: goldenrod;
+  border: 3px solid #f1f1ed;
 }
 
 /*Media queries for my Quiz on small mobile device */
