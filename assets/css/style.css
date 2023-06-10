@@ -99,7 +99,7 @@ section {
   /* box-shadow: 10px 10px 10px; */
 }
 .game-options-box span label {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   text-align: center;
   color: #fff;
 }
@@ -115,7 +115,7 @@ span label {
 }
 /*The styling for when the player hoover over the 4 option will increase in size*/
 span label:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 input[type="radio"] {
@@ -165,7 +165,7 @@ input[type="radio"]:checked ~ .option {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: cornsilk;
+  background-color: #0000009b;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -175,7 +175,7 @@ input[type="radio"]:checked ~ .option {
 .choice-content-box {
   height: 20rem;
   width: 24rem;
-  background-color: rgb(43, 42, 42);
+  background-color: rgb(89, 24, 24);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -270,7 +270,7 @@ p.green {
   text-decoration: none;
 }
 .modal-button-container button:hover {
-  background-color: #daa520;
+  border: 3px solid #000;
 }
 
 .exit-btn {
