@@ -556,10 +556,10 @@ html {
     color: white;
     font-size: 10px;
   }
-
+  /* Mobile background image for mobile & Tablets */
   #home-image {
     background: linear-gradient(#63141465, #0c0a0dd1),
-      url("../images/harry-home.png") no-repeat; /*sourced from Wallpapper Cave*/
+      url("../images/harry-home.png") no-repeat;
     background-size: cover;
     background-position: center;
   }
@@ -580,10 +580,10 @@ html {
     color: white;
     font-size: 10px;
   }
-
+  /* Mobile background image for mobile & Tablets */
   #home-image {
     background: linear-gradient(#63141465, #0c0a0dd1),
-      url("../images/harry-home.png") no-repeat; /*sourced from Wallpapper Cave*/
+      url("../images/harry-home.png") no-repeat;
     background-size: cover;
     background-position: center;
   }
