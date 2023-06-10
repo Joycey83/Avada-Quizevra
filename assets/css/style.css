@@ -18,8 +18,8 @@ body {
 }
 
 #bg-image {
-  background: url("../images/harry-background.png"); /*sourced from Wallpapper Cave*/
-  background-repeat: no-repeat;
+  background: linear-gradient(#63141465, #0c0a0dd1),
+    url("../images/harry-background-2.png") no-repeat; /*sourced from Wallpapper Cave*/
   background-size: cover;
   background-position: center;
 }
@@ -407,7 +407,7 @@ p.green {
     font-size: 1.1rem;
   }
 }
-
+/* **************************************************************** */
 /*CSS styling for my home page starts here*/
 
 html {
@@ -457,9 +457,10 @@ html {
   visibility: hidden;
   width: 400px;
   height: 350px;
-  background: whitesmoke;
+  border: 3px solid #ffffff;
+  background-color: #000000f8;
+  color: aliceblue;
   border-radius: 3px;
-  box-shadow: 10px 10px 10px;
   transition: 0.3s ease-in;
 }
 
@@ -472,8 +473,6 @@ html {
   height: 65px;
   background: red;
   overflow: hidden;
-  border-radius: 5px 5px 0px 0px;
-  box-shadow: 2px 2px 2px;
 }
 
 .header h1 {
@@ -481,6 +480,7 @@ html {
   margin-top: 20px;
   text-align: center;
   font-size: 16px;
+  letter-spacing: 2px;
 }
 
 .fa-times {
@@ -492,11 +492,15 @@ html {
   cursor: pointer;
 }
 
-p {
-  font-size: 12px;
+.instructions {
+  font-size: 0.8rem;
+  padding: 2rem 1rem;
   text-align: justify;
-  padding: 0px 5px;
   margin-top: 15px;
+}
+
+.instructions p {
+  line-height: 2.5;
 }
 
 .line {
