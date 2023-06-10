@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); /*Google Fonts*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: poppins, sans-serif;
+}
+
+/*CSS styling for my Quiz heading & Quiz game box*/
+#title {
+  font-size: 3rem;
+  color: rgb(146, 1, 26);
+  text-align: center;
+}
+
+#bg-image {
+  background: url("../images/harry-background.png"); /*sourced from Wallpapper Cave*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-quiz-box {
+  width: 50rem;
+  height: 30rem;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  opacity: 0.5;
+}
+
+/*CSS styling for the game question, question box*/
+.game-info-box {
+  width: 80%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.game-info-box h1 {
+  font-size: 1.2rem;
+}
+
+.game-question-box {
+  width: 80%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid red;
+  border-radius: 25px;
+  box-shadow: 20px 20px 30px;
+}
+
+.game-question-box p {
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 3px;
+}
+/*CSS styling for the 4 options answers & next question button*/
+.game-options-box {
+  width: 80%;
+  height: 12rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.game-options-box span {
+  width: 45%;
+  height: 3rem;
+  border: 2px solid red;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px;
+}
+.game-options-box span label {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+button {
+  box-shadow: 10px 10px 10px;
+}
+span label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+  font-weight: 600;
+  font-size: 15px;
+  color: rgb(22, 22, 22);
+}
+/*The styling for when the player hoover over the 4 option answer boxes it will turn  blue*/
+span label:hover {
+  transform: scale(1.12);
+  color: #333399;
+}
+
+input[type="radio"] {
+  position: relative;
+  display: none;
+}
+
+/*The styling for when the player chooses the answer that they want, once selected it will be gold*/
+input[type="radio"]:checked ~ .option {
+  background: #ffd700;
+}
+
+.next-button-box {
+  width: 50%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.next-button-box button {
+  width: 8rem;
+  height: 2rem;
+  border-radius: 10px;
+  background: none;
+  color: rgb(25, 25, 25);
+  font-weight: 600;
+  border: 2px solid red;
+  cursor: pointer;
+  outline: none;
+}
+/*The styling for when the player hoover over the Next Question button it will turn Red*/
+.next-button-box button:hover {
+  background-color: red;
+}
+
+/*CSS styling for the warning pop up box when the player does not select any answer to the question*/
+.choice-box {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: cornsilk;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.choice-content-box {
+  height: 20rem;
+  width: 24rem;
+  background-color: rgb(43, 42, 42);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 25px;
+}
+
+.choice-content-box h1,
+h2 {
+  font-size: 1rem;
+  height: 3rem;
+  color: #d3d3d3;
+  text-align: center;
+}
+
+.results-container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: url("../images/harry-background-2.png"); /*sourced from Wallpapper Cave*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1.3s ease-in-out;
+}
+
+.results-content-container {
+  height: 20rem;
+  width: 20rem;
+  background-color: rgb(42, 42, 42);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 25px;
+}
+
+.results-content-container h1 {
+  font-size: 1rem;
+  height: 2rem;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+.rating {
+  width: 15rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.rating p {
+  color: #ffffff;
+  text-align: center;
+}
+p.red {
+  color: red;
+}
+
+p.green {
+  color: green;
+}
+
+.modal-button-container {
+  height: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-button-container button {
+  width: 10rem;
+  height: 2rem;
+  background: none;
+  outline: none;
+  border: 1px solid rgb(252, 242, 241);
+  color: #ffffff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.modal-button-container button:hover {
+  background-color: #daa520;
+}
+
+.exit-btn {
+  width: 20rem;
+  height: 4rem;
+  bottom: 10px;
+  right: 22px;
+  background: none;
+  outline: none;
+  border: 1px solid rgb(252, 242, 241);
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 2px 3px 3px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.exit-btn:hover {
+  background-color: goldenrod;
+}
+
+/*Media queries for my Quiz on small mobile device */
+
+@media (min-width: 300px) and (max-width: 350px) {
+  .game-quiz-box {
+    width: 90%;
+    height: 80vh;
+  }
+  .game-info-box h1 {
+    font-size: 0.6rem;
+  }
+
+  span label {
+    font-weight: 300;
+    font-size: 10px;
+    color: rgb(22, 22, 22);
+  }
+
+  .game-question-box {
+    height: 6rem;
+  }
+  .game-question-box p {
+    font-size: 0.7rem;
+  }
+
+  .game-options-box span {
+    width: 90%;
+    height: 1.5rem;
+    margin-top: 4px;
+  }
+  .game-options-box span label {
+    font-size: 0.5rem;
+  }
+  button {
+    margin-top: 4px;
+  }
+  .choice-content-box {
+    width: 90%;
+    height: 25rem;
+  }
+
+  .choice-content-box h1 {
+    font-size: 1rem;
+  }
+
+  #title {
+    font-size: 2rem;
+    color: rgb(146, 1, 26);
+    text-align: center;
+  }
+}
+
+/* Media queries for my quiz game from 351px up to 480px for small to medium devices*/
+
+@media (min-width: 351px) and (max-width: 480px) {
+  .game-quiz-box {
+    width: 80%;
+    height: 80vh;
+  }
+  .game-info-box h1 {
+    font-size: 0.7rem;
+  }
+
+  .game-question-box {
+    height: 8rem;
+  }
+
+  .game-question-box p {
+    font-size: 0.5rem;
+  }
+
+  .game-options-box span label {
+    font-size: 0.5rem;
+  }
+
+  .game-options-box span {
+    width: 90%;
+    margin-top: 3px;
+  }
+  .choice-content-box {
+    width: 90%;
+    height: 25rem;
+  }
+  .choice-content-box h1 {
+    font-size: 1rem;
+  }
+}
+
+/* Media queries for my quiz from 481px up to 768px for meduim to large devices like tablets & desktop*/
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .game-quiz-box {
+    width: 80%;
+    height: 80vh;
+  }
+  .game-info-box h1 {
+    font-size: 0.9rem;
+  }
+
+  .game-question-box {
+    height: 8rem;
+    width: 60%;
+  }
+
+  .game-question-box p {
+    font-size: 0.6rem;
+  }
+
+  .game-options-box span {
+    width: 45%;
+    margin-top: 3px;
+  }
+  .choice-content-box {
+    width: 90%;
+    height: 25rem;
+  }
+  .choice-content-box h1 {
+    font-size: 1.1rem;
+  }
+}
+
+/*CSS styling for my home page starts here*/
+
+html {
+  height: 100%;
+}
+
+#home-image {
+  height: 100%;
+  background: linear-gradient(#63141465, #0c0a0dd1),
+    url("../images/harry-background.png") no-repeat; /*sourced from Wallpapper Cave*/
+  background-size: cover;
+  background-position: center;
+}
+
+.center,
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#click {
+  display: none;
+}
+.click-me {
+  display: block;
+  padding: 1.2rem 2rem;
+  border: 4px solid #d3d3d3;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 300;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.click-me:hover {
+  background-color: rgba(193, 10, 10, 0.777);
+}
+
+.content {
+  opacity: 0;
+  visibility: hidden;
+  width: 400px;
+  height: 350px;
+  background: whitesmoke;
+  border-radius: 3px;
+  box-shadow: 10px 10px 10px;
+  transition: 0.3s ease-in;
+}
+
+#click:checked ~ .content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header {
+  height: 65px;
+  background: red;
+  overflow: hidden;
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 2px 2px 2px;
+}
+
+.header h1 {
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.fa-times {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+p {
+  font-size: 12px;
+  text-align: justify;
+  padding: 0px 5px;
+  margin-top: 15px;
+}
+
+.line {
+  bottom: 60px;
+  width: 100%;
+  height: 1px;
+  background: black;
+}
+
+.continue-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 22px;
+  border: 2px solid red;
+  border-radius: 6px;
+  color: black;
+  padding: 2px 3px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.continue-btn:hover {
+  background: #0047ab;
+  color: whitesmoke;
+  transition: 0.5s;
+}
+/*CSS styling of my quizevra home page & instructions ends here*/
+
+/*Media queries for my Quizevera home page for small devices*/
+
+@media (min-width: 300px) and (max-width: 350px) {
+  .content {
+    width: 300px;
+    height: 350px;
+    background: whitesmoke;
+    border-radius: 3px;
+    box-shadow: 10px 10px 10px;
+    transition: 0.3s ease-in;
+  }
+  header h1 {
+    color: white;
+    font-size: 10px;
+  }
+}
+/*Media queries for my Quizzard home page for small devices, medium and large devices*/
+@media (min-width: 351px) and (max-width: 800px) {
+  .content {
+    width: 320px;
+    height: 350px;
+    background: whitesmoke;
+    border-radius: 3px;
+    box-shadow: 10px 10px 10px;
+    transition: 0.3s ease-in;
+  }
+
+  header h1 {
+    color: white;
+    font-size: 10px;
+  }
+}
