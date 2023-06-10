@@ -556,9 +556,17 @@ html {
     color: white;
     font-size: 10px;
   }
+
+  #home-image {
+    background: linear-gradient(#63141465, #0c0a0dd1),
+      url("../images/harry-home.png") no-repeat; /*sourced from Wallpapper Cave*/
+    background-size: cover;
+    background-position: center;
+  }
 }
+
 /*Media queries for my Quizzard home page for small devices, medium and large devices*/
-@media (min-width: 351px) and (max-width: 800px) {
+@media (min-width: 351px) and (max-width: 992px) {
   .content {
     width: 320px;
     height: 350px;
@@ -571,5 +579,12 @@ html {
   header h1 {
     color: white;
     font-size: 10px;
+  }
+
+  #home-image {
+    background: linear-gradient(#63141465, #0c0a0dd1),
+      url("../images/harry-home.png") no-repeat; /*sourced from Wallpapper Cave*/
+    background-size: cover;
+    background-position: center;
   }
 }
