@@ -8,437 +8,11 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-/*CSS styling for my Quiz heading & Quiz game box*/
-.quiz--title {
-  font-size: 3.5rem;
-  color: #ffffff60;
-  text-align: center;
-  margin-bottom: 2rem;
-  text-transform: capitalize;
-  letter-spacing: 3px;
-  font-family: "Tilt Prism", cursive;
-}
-
-#bg-image {
-  background: linear-gradient(#55454565, #0c0a0d9e),
-    url("../images/harry-background-2.png") no-repeat; /*sourced from Wallpapper Cave*/
-  background-size: cover;
-  background-position: center;
-}
-
-section {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.game-quiz-box {
-  width: 50rem;
-  height: 30rem;
-  background-color: #00000074;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 10px;
-  opacity: 0.8;
-  box-shadow: rgba(111, 102, 102, 0.305) 0px 5px 15px;
-}
-
-/*CSS styling for the game question, question box*/
-.game-info-box {
-  width: 80%;
-  height: 3rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.game-info-box h1 {
-  font-size: 1.4rem;
-  color: aliceblue;
-  font-weight: 500;
-}
-
-.game-question-box {
-  width: 80%;
-  height: 8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 4px solid red;
-  border-radius: 20px;
-}
-
-.game-question-box p {
-  font-size: 1.4rem;
-  text-align: center;
-  padding: 3px;
-  color: aliceblue;
-  font-weight: 500;
-}
-/*CSS styling for the 4 options answers & next question button*/
-.game-options-box {
-  width: 80%;
-  height: 12rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.game-options-box span {
-  width: 45%;
-  height: 3rem;
-  border: 2px solid rgb(202, 18, 18);
-  border-radius: 20px;
-  overflow: hidden;
-  /* box-shadow: 10px 10px 10px; */
-}
-.game-options-box span label {
-  font-size: 1.1rem;
-  text-align: center;
-  color: #fff;
-}
-
-span label {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-/*The styling for when the player hoover over the 4 option will increase in size*/
-span label:hover {
-  transform: scale(1.1);
-}
-
-input[type="radio"] {
-  position: relative;
-  display: none;
-}
-
-/*The styling for when the player chooses the answer that they want, once selected it will be gold*/
-input[type="radio"]:checked ~ .option {
-  background: #cfb105;
-  color: black;
-}
-
-.next-button-box {
-  width: 50%;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-}
-.next-button-box button {
-  display: block;
-  padding: 0.5rem 1rem;
-  /* width: 8rem;
-  height: 2rem; */
-  border-radius: 10px;
-  text-align: center;
-  color: aliceblue;
-  font-size: 1.2rem;
-  background: none;
-  font-weight: 500;
-  border: 2px solid red;
-  cursor: pointer;
-}
-/*The styling for when the player hoover over the Next Question button it will turn Red*/
-.next-button-box button:hover {
-  background-color: red;
-  color: #000;
-}
-
-/*CSS styling for the warning pop up box when the player does not select any answer to the question*/
-.choice-box {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: #0000009b;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  animation: fadeIn 1.2s ease-in-out;
-}
-
-.choice-content-box {
-  height: 20rem;
-  width: 24rem;
-  background-color: rgb(89, 24, 24);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 25px;
-}
-
-.choice-content-box h1,
-h2 {
-  font-size: 1rem;
-  height: 3rem;
-  color: #d3d3d3;
-  text-align: center;
-}
-
-.results-container {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background: url("../images/hogwarts.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  animation: fadeIn 1.3s ease-in-out;
-}
-
-.results-content-container {
-  height: 20rem;
-  width: 20rem;
-  background-color: rgba(10, 10, 10, 0.692);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 25px;
-}
-
-.results-content-container h1 {
-  font-size: 1rem;
-  height: 2rem;
-  color: #f5f5f5;
-  text-align: center;
-}
-
-.rating {
-  width: 15rem;
-  height: 10rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.rating p {
-  color: #ffffff;
-  text-align: center;
-}
-p.red {
-  color: red;
-}
-
-p.green {
-  color: green;
-}
-
-.modal-button-container {
-  height: 2rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-button-container button {
-  width: 10rem;
-  height: 2rem;
-  background: none;
-  outline: none;
-  border: 1px solid rgb(246, 242, 242);
-  color: #ffffff;
-  font-size: 1.1rem;
-  cursor: pointer;
-  border-radius: 20px;
-  text-decoration: none;
-}
-.modal-button-container button:hover {
-  border: 3px solid #000;
-}
-
-.exit-btn {
-  width: 20rem;
-  height: 4rem;
-  bottom: 10px;
-  right: 22px;
-  background: none;
-  outline: none;
-  border: 1px solid rgb(252, 242, 241);
-  color: #ffffff;
-  font-size: 1rem;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  text-decoration: none;
-}
-
-.exit-btn:hover {
-  border: 3px solid #f1f1ed;
-}
-
-/*Media queries for my Quiz on small mobile device */
-
-@media (min-width: 300px) and (max-width: 350px) {
-  .click-me {
-    display: block;
-    padding: 1.1rem 1rem;
-    font-size: 1.1rem;
-  }
-
-  .quiz--title {
-    font-size: 1.5rem;
-  }
-  .game-quiz-box {
-    width: 90%;
-    height: 80vh;
-  }
-  .game-info-box h1 {
-    font-size: 0.8rem;
-  }
-
-  span label {
-    font-weight: 300;
-    font-size: 10px;
-    color: rgb(22, 22, 22);
-  }
-
-  .game-question-box {
-    height: 6rem;
-  }
-  .game-question-box p {
-    font-size: 1rem;
-  }
-
-  .game-options-box span {
-    width: 100%;
-    height: 3rem;
-    margin-top: 4px;
-  }
-  .game-options-box span label {
-    font-size: 1.1rem;
-  }
-  button {
-    margin-top: 4px;
-  }
-  .next-button-box button {
-    font-size: 1rem;
-  }
-  .choice-content-box {
-    width: 90%;
-    height: 25rem;
-  }
-
-  .choice-content-box h1 {
-    font-size: 1rem;
-  }
-}
-
-/* Media queries for my quiz game from 351px up to 480px for small to medium devices*/
-
-@media (min-width: 351px) and (max-width: 480px) {
-  .click-me {
-    display: block;
-    padding: 1.1rem 1rem;
-    font-size: 1.2rem;
-  }
-  .quiz--title {
-    font-size: 1.5rem;
-  }
-  .game-quiz-box {
-    width: 80%;
-    height: 80vh;
-  }
-  .game-info-box h1 {
-    font-size: 1rem;
-  }
-
-  .game-question-box {
-    height: 8rem;
-  }
-
-  .game-question-box p {
-    font-size: 1rem;
-  }
-
-  .game-options-box span label {
-    font-size: 1rem;
-  }
-
-  .game-options-box span {
-    width: 90%;
-    margin-top: 3px;
-  }
-
-  .next-button-box button {
-    font-size: 1rem;
-  }
-  .choice-content-box {
-    width: 90%;
-    height: 25rem;
-  }
-  .choice-content-box h1 {
-    font-size: 1rem;
-  }
-}
-
-/* Media queries for my quiz from 481px up to 768px for meduim to large devices like tablets & desktop*/
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .click-me {
-    display: block;
-    padding: 1.1rem 1rem;
-    font-size: 1.25rem;
-  }
-
-  .game-quiz-box {
-    width: 80%;
-    height: 80vh;
-  }
-  .game-info-box h1 {
-    font-size: 1.1rem;
-  }
-
-  .game-question-box {
-    height: 8rem;
-    width: 60%;
-  }
-
-  .game-question-box p {
-    font-size: 1.1rem;
-  }
-
-  .game-options-box span {
-    width: 45%;
-    margin-top: 3px;
-  }
-  .choice-content-box {
-    width: 90%;
-    height: 25rem;
-  }
-  .choice-content-box h1 {
-    font-size: 1.1rem;
-  }
-}
-
-/* **************************************************************** */
-/*CSS styling for my home page starts here*/
+/*
+=======================
+CSS Styling: Home Page
+=======================
+*/
 
 html {
   height: 100%;
@@ -553,9 +127,315 @@ html {
   background-color: rgba(193, 10, 10, 0.777);
   transition: 0.5s;
 }
-/*CSS styling of my quizevra home page & instructions ends here*/
+/***********************************************************/
 
-/*Media queries for my Quizevera home page for small devices*/
+/*
+=================================
+CSS Styling: Heading & Quiz Game
+=================================
+
+*/
+.quiz--title {
+  font-size: 3.5rem;
+  color: #ffffff60;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  font-family: "Tilt Prism", cursive;
+}
+
+#bg-image {
+  background: linear-gradient(#55454565, #0c0a0d9e),
+    url("../images/harry-background-2.png") no-repeat; /*sourced from Wallpapper Cave*/
+  background-size: cover;
+  background-position: center;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-quiz-box {
+  width: 50rem;
+  height: 30rem;
+  background-color: #00000074;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  opacity: 0.8;
+  box-shadow: rgba(111, 102, 102, 0.305) 0px 5px 15px;
+}
+
+.game-info-box {
+  width: 80%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.game-info-box h1 {
+  font-size: 1.4rem;
+  color: aliceblue;
+  font-weight: 500;
+}
+
+.game-question-box {
+  width: 80%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid red;
+  border-radius: 20px;
+}
+
+.game-question-box p {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 3px;
+  color: aliceblue;
+  font-weight: 500;
+}
+/*CSS styling for the 4 options answers & next question button*/
+.game-options-box {
+  width: 80%;
+  height: 12rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.game-options-box span {
+  width: 45%;
+  height: 3rem;
+  border: 2px solid rgb(202, 18, 18);
+  border-radius: 20px;
+  overflow: hidden;
+  /* box-shadow: 10px 10px 10px; */
+}
+.game-options-box span label {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #fff;
+}
+
+span label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+span label:hover {
+  transform: scale(1.1);
+}
+
+input[type="radio"] {
+  position: relative;
+  display: none;
+}
+
+/*The styling for when the player chooses the answer that they want, once selected it will be gold*/
+input[type="radio"]:checked ~ .option {
+  background: #cfb105;
+  color: black;
+}
+
+.next-button-box {
+  width: 50%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.next-button-box button {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  text-align: center;
+  color: aliceblue;
+  font-size: 1.2rem;
+  background: none;
+  font-weight: 500;
+  border: 2px solid red;
+  cursor: pointer;
+}
+
+.next-button-box button:hover {
+  background-color: red;
+  color: #000;
+}
+
+/*
+========================
+Warning Pop Up box
+========================
+*/
+.choice-box {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #0000009b;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.choice-content-box {
+  height: 20rem;
+  width: 24rem;
+  background-color: rgb(89, 24, 24);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 25px;
+}
+
+.choice-content-box h1,
+h2 {
+  font-size: 1rem;
+  height: 3rem;
+  color: #d3d3d3;
+  text-align: center;
+}
+
+/* 
+============================
+Player Results box
+============================
+ */
+
+.results-container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: url("../images/hogwarts.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1.3s ease-in-out;
+}
+
+.results-content-container {
+  height: 20rem;
+  width: 20rem;
+  background-color: rgba(10, 10, 10, 0.692);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 25px;
+}
+
+.results-content-container h1 {
+  font-size: 1rem;
+  height: 2rem;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+.rating {
+  width: 15rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.rating p {
+  color: #ffffff;
+  text-align: center;
+}
+p.red {
+  color: red;
+}
+
+p.green {
+  color: green;
+}
+
+.modal-button-container {
+  height: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-button-container button {
+  width: 10rem;
+  height: 2rem;
+  background: none;
+  outline: none;
+  border: 1px solid rgb(246, 242, 242);
+  color: #ffffff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.modal-button-container button:hover {
+  border: 3px solid #000;
+}
+
+.exit-btn {
+  width: 20rem;
+  height: 4rem;
+  bottom: 10px;
+  right: 22px;
+  background: none;
+  outline: none;
+  border: 1px solid rgb(252, 242, 241);
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.exit-btn:hover {
+  border: 3px solid #f1f1ed;
+}
+
+/*****************************************************************
+========= MEDIA QUERIES FOR HOME PAGE & QUIZ GAME ============
+******************************************************************
+/
+
+/* 
+===========================================
+Media Queries: home page for small devices
+===========================================
+ */
 
 @media (min-width: 300px) and (max-width: 350px) {
   .click-me {
@@ -592,8 +472,12 @@ html {
     line-height: 1.5;
   }
 }
+/* 
+  =====================================================================
+  Media Queries: Home Page for small devices, medium and large devices
+  =====================================================================
+   */
 
-/*Media queries for my Quizzard home page for small devices, medium and large devices*/
 @media (min-width: 351px) and (max-width: 992px) {
   .click-me {
     display: block;
@@ -628,5 +512,161 @@ html {
       url("../images/harry-home.png") no-repeat;
     background-size: cover;
     background-position: center;
+  }
+}
+
+/* 
+============================================
+Media Queries: Small Mobile Devices
+============================================
+ */
+
+@media (min-width: 300px) and (max-width: 350px) {
+  .click-me {
+    display: block;
+    padding: 1.1rem 1rem;
+    font-size: 1.1rem;
+  }
+
+  .quiz--title {
+    font-size: 1.5rem;
+  }
+  .game-quiz-box {
+    width: 90%;
+    height: 80vh;
+  }
+  .game-info-box h1 {
+    font-size: 0.8rem;
+  }
+
+  span label {
+    font-weight: 300;
+    font-size: 10px;
+    color: rgb(22, 22, 22);
+  }
+
+  .game-question-box {
+    height: 6rem;
+  }
+  .game-question-box p {
+    font-size: 1rem;
+  }
+
+  .game-options-box span {
+    width: 100%;
+    height: 3rem;
+    margin-top: 4px;
+  }
+  .game-options-box span label {
+    font-size: 1.1rem;
+  }
+  button {
+    margin-top: 4px;
+  }
+  .next-button-box button {
+    font-size: 1rem;
+  }
+  .choice-content-box {
+    width: 90%;
+    height: 25rem;
+  }
+
+  .choice-content-box h1 {
+    font-size: 1rem;
+  }
+}
+
+/* 
+============================================================
+Media Queries: 351px up to 480px for small to medium devices
+============================================================
+ */
+
+@media (min-width: 351px) and (max-width: 480px) {
+  .click-me {
+    display: block;
+    padding: 1.1rem 1rem;
+    font-size: 1.2rem;
+  }
+  .quiz--title {
+    font-size: 1.5rem;
+  }
+  .game-quiz-box {
+    width: 80%;
+    height: 80vh;
+  }
+  .game-info-box h1 {
+    font-size: 1rem;
+  }
+
+  .game-question-box {
+    height: 8rem;
+  }
+
+  .game-question-box p {
+    font-size: 1rem;
+  }
+
+  .game-options-box span label {
+    font-size: 1rem;
+  }
+
+  .game-options-box span {
+    width: 90%;
+    margin-top: 3px;
+  }
+
+  .next-button-box button {
+    font-size: 1rem;
+  }
+  .choice-content-box {
+    width: 90%;
+    height: 25rem;
+  }
+  .choice-content-box h1 {
+    font-size: 1rem;
+  }
+}
+
+/* 
+====================================================================================
+Media Queries: 481px up to 768px for meduim to large devices like tablets & desktop
+====================================================================================
+ */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .click-me {
+    display: block;
+    padding: 1.1rem 1rem;
+    font-size: 1.25rem;
+  }
+
+  .game-quiz-box {
+    width: 80%;
+    height: 80vh;
+  }
+  .game-info-box h1 {
+    font-size: 1.1rem;
+  }
+
+  .game-question-box {
+    height: 8rem;
+    width: 60%;
+  }
+
+  .game-question-box p {
+    font-size: 1.1rem;
+  }
+
+  .game-options-box span {
+    width: 45%;
+    margin-top: 3px;
+  }
+  .choice-content-box {
+    width: 90%;
+    height: 25rem;
+  }
+  .choice-content-box h1 {
+    font-size: 1.1rem;
   }
 }
