@@ -12,9 +12,18 @@ My approach for designing this Quiz game application was to create it so that it
 
 ## Features
 
-- There is an instruction pop up box explaining how to play the quiz
-- There are 30 questions to answer, questions range from medium to hard
-- The player must select an answer, so no skipping questions
-- The player will get one point for each correct question
-- Once the player completes the quiz, a results box will pop up
-- Player can choose to play again or choose to exit the game
+- There is an game rule pop up box explaining how to play the quiz.
+- There are 30 questions to answer, questions range from medium to hard.
+- The player must select an answer, so no skipping questions.
+- If a player skips a question a warning box will pop up.
+- If the player chooses the correct answer the box will turn green and if the answer is incorrect the box will turn red.
+- The player will get one point for each correct question.
+- Once the player completes the quiz, a results box will pop up.
+- Player can choose to play again or choose to exit the game.
+
+## Usage
+
+- Visit https://avada-quizevra.netlify.app/
+- Read the game rules for the quiz and the click play when you are ready.
+- Each question will provide you with four possible answers, player will need to choose one in order to move to the next question.
+- Answer all 30 questions to complete the quiz.
