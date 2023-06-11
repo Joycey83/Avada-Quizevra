@@ -7,3 +7,5 @@ Avada Quizevra is a web based application designed using HTML5, CSS and Java Scr
 [View the live project here.](https://avada-quizevra.netlify.app/)
 
 My approach for designing this Quiz game application was to create it so that it is not only accessible to view on desktop but it is also mobile responsive. The application is also accessible through a range of different devices.
+
+![quiz image mock up.](assets/images/Avada-Quizevra-mockup.png)
