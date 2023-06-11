@@ -16,4 +16,4 @@ My approach for designing this Quiz game application was to create it so that it
 - There are 30 questions to answer, questions range from medium to hard
 - The player must select an answer, so no skipping questions
 - The player will get one point for each correct question
-- Once the player completes the quiz
+- Once the player completes the quiz, a results box will pop up
