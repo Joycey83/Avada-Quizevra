@@ -28,7 +28,7 @@ My approach for designing this Quiz game application was to create it so that it
 - Each question will provide you with four possible answers, player will need to choose one in order to move to the next question.
 - Answer all 30 questions to complete the quiz.
 
-# Frameworks & Programs Used
+# Programs Used
 
 - Google Fonts One: [Tilt Prism](https://fonts.google.com/?query=Tilt+Prism)
 
