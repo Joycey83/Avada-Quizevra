@@ -473,4 +473,61 @@ let questions = [
     optionD: "Earwax",
     correctOption: "optionB", //Q50
   },
+
+  {
+    question:
+      "At the end of 'Harry Potter And The Philosopher's Stone', what was the final number of points that Gryffindor and Slytherin had?",
+    optionA: "420 and 490",
+    optionB: "485 and 485",
+    optionC: "482 and 472",
+    optionD: "486 and 470",
+    correctOption: "optionC", //Q51
+  },
+
+  {
+    question:
+      "What is the name of Dudley's friend who accompanies the Dursleys and Harry Potter to the zoo?",
+    optionA: "Piers",
+    optionB: "Dennis",
+    optionC: "Gordon",
+    optionD: "Malcolm",
+    correctOption: "optionA", //Q52
+  },
+
+  {
+    question: "What day was Lily Potter born?",
+    optionA: "January 30, 1962",
+    optionB: "January 30, 1958",
+    optionC: "January 30, 1956",
+    optionD: "January 30, 1960",
+    correctOption: "optionD", //Q53
+  },
+
+  {
+    question: "Who said, 'Nitwit!' 'Blubber!' 'Oddment!' Tweak!'?",
+    optionA: "Filius Flitwick",
+    optionB: " Albus Dumbledore",
+    optionC: "Dolores Umbridge",
+    optionD: "Sybill Trelawney",
+    correctOption: "optionB", //Q54
+  },
+
+  {
+    question:
+      "Which potion was used to awaken the princess given the Draught of Living Death?",
+    optionA: "",
+    optionB: "",
+    optionC: "",
+    optionD: "Wiggenweld Potion",
+    correctOption: "optionD", //Q55
+  },
+
+  {
+    question: "",
+    optionA: "",
+    optionB: "",
+    optionC: "",
+    optionD: "",
+    correctOption: "optionA", //Q53
+  },
 ];
