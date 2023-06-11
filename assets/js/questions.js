@@ -515,19 +515,57 @@ let questions = [
   {
     question:
       "Which potion was used to awaken the princess given the Draught of Living Death?",
-    optionA: "",
-    optionB: "",
-    optionC: "",
-    optionD: "Wiggenweld Potion",
+    optionA: "Invigoration Draught",
+    optionB: "Edurus",
+    optionC: "Everklena",
+    optionD: "Wiggenweld",
     correctOption: "optionD", //Q55
   },
 
   {
-    question: "",
-    optionA: "",
-    optionB: "",
-    optionC: "",
-    optionD: "",
-    correctOption: "optionA", //Q53
+    question:
+      "In 'Harry Potter And The Deathly Hallows', what is the first Horcrux that Harry, Ron, and Hermione try to destroy?",
+    optionA: "Nagini The Snake",
+    optionB: "Resurrection Stone Ring",
+    optionC: "The locket of Salazar Slytherin",
+    optionD: "Rowena Ravenclaw’s Diadem",
+    correctOption: "optionC", //Q56
+  },
+
+  {
+    question: "Which of the Weasley children did Fleur Delacour marry?",
+    optionA: "George Weasley",
+    optionB: "Bill Weasley",
+    optionC: "Percy Weasley",
+    optionD: "Charles Weasley",
+    correctOption: "optionB", //Q57
+  },
+
+  {
+    question: "How many exceptions exist to Gamp's Elemental Law?",
+    optionA: "Eight",
+    optionB: "Five",
+    optionC: "Three",
+    optionD: "Six",
+    correctOption: "optionB", //Q58
+  },
+
+  {
+    question:
+      "What are the last three words of the book 'Harry Potter And The Deathly Hallows'?",
+    optionA: "'Things went well.'",
+    optionB: "'That went well.'",
+    optionC: "'All was well.'",
+    optionD: "'Everything went well",
+    correctOption: "optionC", //Q59
+  },
+
+  {
+    question: "How do you close the Marauder's Map?",
+    optionA: "devilment Managed",
+    optionB: "Mischief Managed",
+    optionC: "scampishness Managed",
+    optionD: "Pranks Managed",
+    correctOption: "optionB", //Q60
   },
 ];
