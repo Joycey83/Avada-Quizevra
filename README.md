@@ -43,6 +43,7 @@ My approach for designing this Quiz game application was to create it so that it
     [View ](https://wallpapercave.com/harry-potter-hd-wallpapers)
   - [Iconfinder (Harry Potter Favicon)](https://www.iconfinder.com/search?q=harry+potter)
 - **Content**
+
   - All the content for the Instruction box for the quiz game was written by me.
   - All the content for the quiz questions and answers were taken from various quiz game websites that I have found on Google.
   - [View Wizzarding World ](https://www.wizardingworld.com/quiz)
@@ -50,3 +51,7 @@ My approach for designing this Quiz game application was to create it so that it
   - [View Kidadl (hard questions) ](https://kidadl.com/articles/hard-harry-potter-trivia-questions-and-answers-are-you-a-true-potterhead)
   - [Insider (hard questions) ](https://www.insider.com/harry-potter-trivia-2016-11)
   - [The big quiz thing ](https://bigquizthing.com/trivia-questions-ans/harry-potter-trivia-questions-and-answers/)
+
+  * **Other Resources**
+  * I have crossed referenced all the questions and answers for my quiz on Harry Potter Fan page website. I need to make sure that all the answers to the questions are correct and not misleading or totally wrong.
+    [View ](https://harrypotter.fandom.com/wiki/Main_Page)
