@@ -17,3 +17,4 @@ My approach for designing this Quiz game application was to create it so that it
 - The player must select an answer, so no skipping questions
 - The player will get one point for each correct question
 - Once the player completes the quiz, a results box will pop up
+- Player can choose to play again or choose to exit the game
