@@ -41,6 +41,7 @@ My approach for designing this Quiz game application was to create it so that it
 - **Imagery**
   - All the imagery that are being used for this game application are taken from a desktop wallpaper website called Wallpaper Cave.
     [View ](https://wallpapercave.com/harry-potter-hd-wallpapers)
+  - [Iconfinder (Harry Potter Favicon)](https://www.iconfinder.com/search?q=harry+potter)
 - **Content**
   - All the content for the Instruction box for the quiz game was written by me.
   - All the content for the quiz questions and answers were taken from various quiz game websites that I have found on Google.
