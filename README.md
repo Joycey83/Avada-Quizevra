@@ -27,3 +27,25 @@ My approach for designing this Quiz game application was to create it so that it
 - Read the game rules for the quiz and the click play when you are ready.
 - Each question will provide you with four possible answers, player will need to choose one in order to move to the next question.
 - Answer all 30 questions to complete the quiz.
+
+# Frameworks & Programs Used
+
+- Google Fonts One: [Tilt Prism](https://fonts.google.com/?query=Tilt+Prism)
+
+- Google Fonts Two: [Ubuntu](https://fonts.google.com/specimen/Ubuntu?query=Ubuntu)
+
+- [Fontawesome](https://fontawesome.com/)
+
+# Credit
+
+- **Imagery**
+  - All the imagery that are being used for this game application are taken from a desktop wallpaper website called Wallpaper Cave.
+    [View ](https://wallpapercave.com/harry-potter-hd-wallpapers)
+- **Content**
+  - All the content for the Instruction box for the quiz game was written by me.
+  - All the content for the quiz questions and answers were taken from various quiz game websites that I have found on Google.
+  - [View Wizzarding World ](https://www.wizardingworld.com/quiz)
+  - [View Kidadl (book questions) ](https://kidadl.com/articles/harry-potter-book-trivia-questions-and-answers-for-every-muggle)
+  - [View Kidadl (hard questions) ](https://kidadl.com/articles/hard-harry-potter-trivia-questions-and-answers-are-you-a-true-potterhead)
+  - [Insider (hard questions) ](https://www.insider.com/harry-potter-trivia-2016-11)
+  - [The big quiz thing ](https://bigquizthing.com/trivia-questions-ans/harry-potter-trivia-questions-and-answers/)
