@@ -97,7 +97,7 @@ function handleNextQuestion() {
   unCheckRadioButtons();
   //delays next question displaying for a second
   setTimeout(() => {
-    if (indexNumber <= 29) {
+    if (indexNumber <= 3) {
       NextQuestion(indexNumber);
     } else {
       handleEndGame();
@@ -138,7 +138,7 @@ function handleEndGame() {
     remark = "You are the Ulitmate Potterhead!, Dumbledore will be proud.";
     remarkColor = "gold";
   }
-  const playerGrade = Math.floor((playerScore / 30) * 100);
+  const playerGrade = Math.floor((playerScore / 3) * 100);
 
   //data to display to score board
   document.getElementById("remarks").innerHTML = remark;
