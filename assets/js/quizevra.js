@@ -97,7 +97,7 @@ function handleNextQuestion() {
   unCheckRadioButtons();
   //delays next question displaying for a second
   setTimeout(() => {
-    if (indexNumber <= 3) {
+    if (indexNumber <= 2) {
       NextQuestion(indexNumber);
     } else {
       handleEndGame();
